@@ -1,17 +1,5 @@
 class Cliente:
-    def __init__(
-        self,
-        nome,
-        cpf,
-        idade,
-        nascimento,
-        numero_cnh,
-        foto_cnh,
-        vencimento_cnh,
-        endereco,
-        telefone,
-        email
-    ):
+    def __init__(self, nome, cpf, idade, nascimento, numero_cnh, foto_cnh, vencimento_cnh, endereco, telefone, email):
         self.nome = nome
         self.cpf = cpf
         self.idade = idade
@@ -22,6 +10,7 @@ class Cliente:
         self.endereco = endereco
         self.telefone = telefone
         self.email = email
+        self.reserva_ativa = None
 
     def exibir(self):
         print("===== CLIENTE =====")
@@ -29,9 +18,9 @@ class Cliente:
         print(f"CPF: {self.cpf}")
         print(f"Idade: {self.idade}")
         print(f"Nascimento: {self.nascimento}")
-        print(f"CNH: {self.numero_cnh}")
+        print(f"Número CNH: {self.numero_cnh}")
         print(f"Foto CNH: {self.foto_cnh}")
-        print(f"Vencimento_CNH: {self.vencimento_cnh}")
-        print(f"Endereco: {self.endereco}")
+        print(f"Vencimento CNH: {self.vencimento_cnh}")
+        print(f"Endereço: {self.endereco}")
         print(f"Telefone: {self.telefone}")
         print(f"E-mail: {self.email}")
